@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SchoolSetupActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/cus_toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/selectionNested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/noticeTV"
+                android:textSize="12sp"
+                android:text="@string/select_or_create_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="6dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"/>
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/error_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/errorIV"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/icon_error_100px_1"/>
+
+                    <TextView
+                        android:id="@+id/errorTV"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_or_create_school"
+                        android:textSize="18sp"
+                        android:paddingStart="24dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:paddingEnd="24dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/retry"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon_synchronize_100px"/>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/retry" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/createTV"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="-14dp"
+                android:layout_marginBottom="52dp"
+                android:text="@string/create_school"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_new_meet_bg"
+                android:textStyle="bold"
+                android:paddingEnd="50dp"
+                android:paddingStart="14dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ScrollView
+        android:id="@+id/additionScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints="@string/enter_meeting_id"
+                android:background="@drawable/bg_sharp_curve_coners_bg"
+                android:hint="@string/name"
+                android:textColor="@color/colorAccent"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints="@string/location"
+                android:background="@drawable/bg_sharp_curve_coners_bg"
+                android:hint="@string/location"
+                android:textColor="@color/colorAccent"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="22sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:padding="10dp"
+                android:background="@drawable/bg_new_meet_bg"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/create_new_"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

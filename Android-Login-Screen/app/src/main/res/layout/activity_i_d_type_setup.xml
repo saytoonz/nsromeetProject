@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".activities.IDTypeSetupActivity">
+
+    <include layout="@layout/cus_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/clear_image_of_staff_id_card"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/staff_idIV"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_sharp_curve_coners_bg"
+                android:src="@drawable/icon_image_50px"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/clear_image_of_national_id_card"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/national_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_sharp_curve_coners_bg"
+                android:src="@drawable/icon_image_50px"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/clear_image_of_any_additional_file_optional"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/additional_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_sharp_curve_coners_bg"
+                android:src="@drawable/icon_image_50px"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/phone"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_sharp_curve_coners_bg"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/name"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_sharp_curve_coners_bg"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/optional_notes"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/optionNoteET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:maxHeight="250dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_sharp_curve_coners_bg"
+                android:hint="@string/write_report"
+                android:inputType="textMultiLine"
+                android:gravity="start|top"
+                android:padding="8dp"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"/>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/sendRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_sharp_curve_coners_bg"
+                    android:backgroundTint="@color/colorAccent"
+                    android:padding="15dp"
+                    android:text="@string/request"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/cancel_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:background="@drawable/bg_sharp_curve_coners_bg"
+                    android:textColor="@color/colorAccent"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

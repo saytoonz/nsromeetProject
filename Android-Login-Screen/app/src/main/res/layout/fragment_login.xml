@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginEnd="22dp"
+    android:layout_marginStart="22dp"
+    tools:context="com.nsromapa.nsromeet.login.LoginFragment">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="92dp"
+        android:textColorHint="#8effffff"
+        android:paddingEnd="32dp"
+        android:inputType="text"
+        android:background="@drawable/bubble"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:hint="@string/username"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingEnd="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bubble"
+        android:textColorHint="#8effffff"
+        android:inputType="textPassword"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:hint="@string/password"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/login_with_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:text="@string/login_with_phone"
+        android:paddingEnd="10dp"
+        android:textColor="#FF5722"
+        android:paddingStart="10dp"/>
+
+
+<!--    android:background="@drawable/bg_sharp_curve_coners_bg"-->
+
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textColor="#FF5722"
+        android:visibility="gone"/>
+</LinearLayout>

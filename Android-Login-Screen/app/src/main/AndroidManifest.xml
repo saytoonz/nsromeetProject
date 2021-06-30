@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nsromapa.nsromeet">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="internalOnly"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.TermsAndPolicies"></activity>
+        <activity android:name=".activities.GroupInfoActivity" />
+        <activity android:name=".activities.GroupActivity" />
+        <activity android:name=".activities.ScheduleActivity" />
+        <activity android:name=".activities.IDTypeSetupActivity" />
+        <activity android:name=".activities.SchoolCallTrendActivity" />
+        <activity android:name=".activities.SchoolSetupActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.MeetingWithIDActivity" />
+        <activity android:name=".activities.VerifyMobile" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.DeepLinker">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="meeting.nsromeet.com"
+                    android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="meeting.nsromeet.com" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="nsromeet.nsromapa.com"
+                    android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="nsromeet.nsromapa.com" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".services.BackgroundService"
+            android:enabled="true" />
+
+        <receiver android:name=".services.BroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

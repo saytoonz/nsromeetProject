@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        app:autoFlipBack="false"
+        app:autoFlipBackTime="1000"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipFrom="front"
+        app:flipOnTouch="true"
+        app:flipType="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/item_schedule_flip_back" />
+
+        <!-- Front Layout Goes Here -->
+        <include layout="@layout/item_schedule_flip_front" />
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>

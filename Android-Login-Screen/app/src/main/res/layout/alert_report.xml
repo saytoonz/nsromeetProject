@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="320dp"
+    android:minWidth="380dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_sharp_curve_coners_bg"
+    android:gravity="center">
+
+   <LinearLayout
+       android:id="@+id/suggestionsLL"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+
+       <TextView
+           android:id="@+id/not_true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:minWidth="140dp"
+           android:background="@drawable/bg_sharp_curve_coners_bg"
+           android:text="@string/not_true"
+           android:textColor="@color/colorAccent"
+           android:padding="10dp"
+           android:singleLine="false"
+           android:textSize="14sp" />
+
+       <TextView
+           android:id="@+id/inappropirate"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:minWidth="140dp"
+           android:background="@drawable/bg_sharp_curve_coners_bg"
+           android:text="@string/inappropirate"
+           android:textColor="@color/colorAccent"
+           android:padding="10dp"
+           android:singleLine="false"
+           android:textSize="14sp" />
+
+       <TextView
+           android:id="@+id/this_might_be_scam"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:minWidth="140dp"
+           android:background="@drawable/bg_sharp_curve_coners_bg"
+           android:text="@string/this_might_be_scam"
+           android:textColor="@color/colorAccent"
+           android:padding="10dp"
+           android:singleLine="false"
+           android:textSize="14sp" />
+
+   </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/appreciationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/thanks_for_your_feedback"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/reportET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:maxHeight="250dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_sharp_curve_coners_bg"
+        android:hint="@string/write_report"
+        android:textColor="@color/colorAccent"
+        android:inputType="textMultiLine"
+        android:gravity="start|top"
+        android:padding="8dp"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+
+
+    <Button
+        android:id="@+id/send_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_report"
+        android:background="@drawable/bg_new_meet_bg"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/want_to_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_want_to_write"
+        android:background="@drawable/bg_new_meet_bg"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:visibility="visible"/>
+
+
+</LinearLayout>

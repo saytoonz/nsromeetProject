@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="320dp"
+    android:minWidth="380dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_sharp_curve_coners_bg"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/noticeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/choose_your_meeting_type"
+        android:layout_margin="20dp"
+        android:textAlignment="center"/>
+
+
+
+    <Button
+        android:id="@+id/school_meetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_meetings"
+        android:background="@drawable/bg_new_meet_bg"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/general_meetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/general_meeting"
+        android:background="@drawable/bg_new_meet_bg"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

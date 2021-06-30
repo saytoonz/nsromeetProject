@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#1677C5</color>
+    <color name="colorAccent">#1677C5</color>
+    <color name="white">#ffffff</color>
+    <color name="text_two">#94ffffff</color>
+    <color name="text_hint">#8effffff</color>
+    <color name="otp_editext_color">#DA1E1919</color>
+    <color name="green">#940ce61f</color>
+    <color name="meet_orange">#EF663A</color>
+    <color name="black">#000000</color>
+    <color name="red">#F53527</color>
+</resources>

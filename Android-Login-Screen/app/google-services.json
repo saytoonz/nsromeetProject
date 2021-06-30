@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "877318592365",
+    "firebase_url": "https://nsromeet.firebaseio.com",
+    "project_id": "nsromeet",
+    "storage_bucket": "nsromeet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877318592365:android:fb3eadad99a0bf31f1ac64",
+        "android_client_info": {
+          "package_name": "com.nsromapa.nsromeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877318592365-sb8lki8gt91iivi8slifdcbjmtnad1kg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nsromapa.nsromeet",
+            "certificate_hash": "b5cfc780864b0f49d8c027b88e0ee56e64d12914"
+          }
+        },
+        {
+          "client_id": "877318592365-jtdtlt9b39p4jv2onv50iumb4p4709sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nsromapa.nsromeet",
+            "certificate_hash": "4adf2a4dd3dd6295b7e80c981d780b2bcfe781b3"
+          }
+        },
+        {
+          "client_id": "877318592365-27vi98uka51avqf416uhn3s0oqtrujam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKI03aH69Dg7uyRfimVGpeetNTh46ca5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877318592365-27vi98uka51avqf416uhn3s0oqtrujam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

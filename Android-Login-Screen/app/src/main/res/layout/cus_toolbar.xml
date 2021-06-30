@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:padding="8dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/bg_toolbar_bg">
+        <ImageView
+            android:id="@+id/toolbar_backIv"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_arrow_100px"
+            android:tint="@color/colorAccent"
+            android:rotation="180"/>
+
+        <TextView
+            android:id="@+id/toolbar_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorAccent"/>
+
+</LinearLayout>

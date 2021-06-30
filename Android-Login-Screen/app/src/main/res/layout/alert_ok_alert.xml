@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="320dp"
+    android:minWidth="380dp"
+    android:padding="14dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_sharp_curve_coners_bg"
+    android:gravity="center">
+
+
+
+    <TextView
+        android:id="@+id/alertText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/select_or_create_school"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+
+
+<LinearLayout
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:background="@drawable/bg_new_meet_bg"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:background="@drawable/bg_new_meet_bg"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
+
+</LinearLayout>

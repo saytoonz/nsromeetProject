@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nsromapa.nsromeet.login.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:paddingBottom="48dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_marginTop="92dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_hint" />
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="@string/full_name"
+            android:inputType="text"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_hint" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/phone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="14dp"-->
+<!--            android:background="@drawable/bubble"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:hint="@string/phone"-->
+<!--            android:inputType="phone"-->
+<!--            android:paddingStart="32dp"-->
+<!--            android:paddingEnd="32dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHint="@color/text_hint" />-->
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="32dp"
+            android:textColor="@color/white"
+            android:paddingEnd="32dp"
+            android:textColorHint="@color/text_hint" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/rPassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="14dp"-->
+<!--            android:background="@drawable/bubble"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:hint="@string/confirm_password"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:paddingEnd="32dp"-->
+<!--            android:paddingStart="32dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHint="@color/text_hint" />-->
+    </LinearLayout>
+</FrameLayout>
